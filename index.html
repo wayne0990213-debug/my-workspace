@@ -17,7 +17,7 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.6.0/firebas
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js';
 import { getFirestore, doc, onSnapshot, setDoc, getDoc } from 'https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js';
 const config={apiKey:"AIzaSyCD5_placeholder",authDomain:"student-workspace-13fb9.firebaseapp.com",projectId:"student-workspace-13fb9",storageBucket:"student-workspace-13fb9.firebasestorage.app",messagingSenderId:"509283043256",appId:"1:509283043256:web:e94a0c06dde088adf0b14d"};
-config.apiKey="AIzaSyCD" + "1a81__jJqf9NOhIn7ZG2MR719XfeLo";
+config.apiKey="AIzaSyCDy1a81__jJqf9NOhIn7ZG2MR719XfeLo";
 const app=initializeApp(config), auth=getAuth(app), db=getFirestore(app),login=document.querySelector('#cloud-login'),logout=document.querySelector('#cloud-logout'),importBtn=document.querySelector('#cloud-import'),status=document.querySelector('#cloud-status');
 let user=null,unsub=null,ready=false,backup=null,timers={},remote={},loginPending=false;
 const localData=()=>({tasks:JSON.parse(localStorage.getItem('together-tasks-v1')||'[]'),homework:JSON.parse(localStorage.getItem('student-homework-v1')||'[]'),note:localStorage.getItem('together-note-v1')||''});
